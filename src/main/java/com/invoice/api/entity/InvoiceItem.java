@@ -16,7 +16,7 @@ public class InvoiceItem {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "invoice_item_id")
-	private Integer invoice_item_id; // Cambiado a Integer
+	private Integer invoice_item_id; 
 	
 	@JsonIgnore
 	@Column(name = "invoice_id")
