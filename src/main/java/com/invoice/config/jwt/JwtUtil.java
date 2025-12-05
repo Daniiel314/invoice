@@ -19,7 +19,7 @@ import io.jsonwebtoken.Jwts;
 @Component
 public class JwtUtil {
 
-	private static final String SECRET_KEY = "8J+YjvCfpJPwn5ic8J+YmvCfmI3wn6Ww8J+ZgvCfpKM="; 
+	private static final String SECRET_KEY = "8J+Yg/CfmITwn5iB8J+YivCfmYPwn5mC8J+lufCfmJo="; 
     private static final SecretKey secretKey = new SecretKeySpec(Base64.getDecoder().decode(SECRET_KEY), "HmacSHA256");
 
     public Claims extractClaims(String token) {
