@@ -34,7 +34,7 @@ public class CtrlCart {
     }
 
     // 2. Obtener carrito (GET /cart-item/detail)
-    @GetMapping("/detail") 
+    @GetMapping({"", "/detail"}) 
     public ResponseEntity<List<DtoCartItemOut>> getCart() {
         return new ResponseEntity<>(svc.getCart(), HttpStatus.OK);
     }
